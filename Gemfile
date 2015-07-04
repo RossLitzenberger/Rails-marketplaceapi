@@ -8,6 +8,12 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'active_model_serializers'
 
+gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+gem 'furatto', github: "IcaliaLabs/furatto-rails"
+gem 'font-awesome-rails'
+gem 'compass-rails', '~> 2.0'
+gem 'simple_form'
+
 group :doc do
   gem 'sdoc', require: false
 end
