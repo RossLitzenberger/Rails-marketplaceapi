@@ -29,6 +29,7 @@ end
 
 group :test do
   gem "rspec-rails", ">= 3.0"
+  gem 'rspec-collection_matchers'
   gem "shoulda-matchers"
 end
 
