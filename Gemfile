@@ -26,7 +26,6 @@ group :development, :test do
   gem 'ffaker'
 end
 
-
 group :test do
   gem "rspec-rails", ">= 3.0"
   gem 'rspec-collection_matchers'
