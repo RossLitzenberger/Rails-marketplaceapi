@@ -62,7 +62,6 @@ describe Api::V1::ProductsController do
     end
   end
 
-
   describe "POST #create" do
     context "when is successfully created" do
       before(:each) do
