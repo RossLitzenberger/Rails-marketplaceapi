@@ -30,6 +30,7 @@ group :test do
   gem "rspec-rails", ">= 3.0"
   gem 'rspec-collection_matchers'
   gem "shoulda-matchers"
+  gem "email_spec"
 end
 
 gem "devise"
