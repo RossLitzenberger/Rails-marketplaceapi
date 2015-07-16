@@ -31,6 +31,7 @@ group :test do
   gem 'rspec-collection_matchers'
   gem "shoulda-matchers"
   gem "email_spec"
+  gem 'guard-rspec', require: false
 end
 
 gem "devise"
