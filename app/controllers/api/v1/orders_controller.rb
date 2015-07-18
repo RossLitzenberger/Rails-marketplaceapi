@@ -2,7 +2,11 @@ class Api::V1::OrdersController < ApplicationController
   before_action :authenticate_with_token!
   respond_to :json
   def index
-    respond_with current_user.orders
+    orders = current_user.orders.page(params[:page]).per(params[:per_page])
+    render json: orders, meta: {  pagination:
+                                  { per_page: params[:per_page],
+                                    total_pages: orders.total_pages,
+                                    total_objects: orders.total_count }  }
   end
 
   def show
@@ -20,5 +24,5 @@ class Api::V1::OrdersController < ApplicationController
       render json: { errors: order.errors }, status: 422
     end
   end
-  
+
 end
