@@ -13,6 +13,7 @@ gem 'furatto', github: "IcaliaLabs/furatto-rails"
 gem 'font-awesome-rails'
 gem 'compass-rails', '~> 2.0'
 gem 'simple_form'
+gem 'kaminari'
 
 group :doc do
   gem 'sdoc', require: false
